@@ -1,6 +1,14 @@
 scopes:
-  team:
-    label: Team
-    modelClass: \LincolnBrito\Projects\Models\Team
-    nameFrom: name
-    conditions: team_id = :filtered
+    team:
+      label: Team
+      modelClass: \LincolnBrito\Projects\Models\Team
+      nameFrom: name
+      conditions: team_id = :filtered
+    hide_past_due:
+        label: Hide past due
+        type: checkbox
+        conditions: ends_at > now()
+    published_at:
+        label: Date
+        type: daterange
+        conditions: created_at >= ':after' AND created_at <= ':before'
