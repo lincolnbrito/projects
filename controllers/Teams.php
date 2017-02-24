@@ -19,6 +19,8 @@ class Teams extends Controller
     public $formConfig = 'config_form.yaml';
     public $listConfig = 'config_list.yaml';
 
+    public $requiredPermissions = ['lincolnbrito.projects.manage_teams'];
+
     public function __construct()
     {
         parent::__construct();
