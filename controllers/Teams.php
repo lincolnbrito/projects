@@ -93,4 +93,18 @@ class Teams extends Controller
         return $this->makeRedirect('delete', $teamModel);
 
     }
+
+    public function formExtendFields($form)
+    {
+        if ( $form->getContext() == 'update' )
+        {
+
+            $team = $form->model;
+
+            $userField = $form->getField('users');
+
+            $userField->value = User::where('team_id', $team->id)->lists('id');;
+        }
+    }
+
 }

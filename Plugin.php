@@ -41,7 +41,7 @@ class Plugin extends PluginBase
     public function boot()
     {
         Backend\Models\User::extend(function($model){
-           $model->belongsTo['team'] = ['LincolnBrito\Projects\Models\Team'];
+           $model->belongsTo['team'] = ['\LincolnBrito\Projects\Models\Team'];
         });
     }
 
