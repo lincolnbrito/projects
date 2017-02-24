@@ -61,6 +61,10 @@ return [
                 'projects'  => 'Criar Projeto',
                 'teams'     => 'Criar Time'
             ],
+            'breadcrumb' => [
+                'projects' => 'Projetos',
+                'teams'    => 'Times'
+            ],
             'fields' => [
                 'projects' => [
                     'id'            => ['label'=>'ID'],
@@ -70,6 +74,20 @@ return [
                     'team_id'       => ['label'=>'Time','placeholder'=>'Selecione um time'],
                 ],
                 'teams' => []
+            ],
+            'buttons' => [
+                'create' => 'Criar',
+                'create_close' => 'Criar e fechar',
+                'or' => 'ou',
+                'cancel' => 'Cancelar'
+            ],
+            'messages' => [
+                'projects' => [
+                    'creating_project' => 'Criando Projeto...'
+                ],
+                'teams' => [
+                    'creating_team' => 'Criando Time...'
+                ]
             ]
         ],
         'update' => [
@@ -77,6 +95,24 @@ return [
                 'projects'  => 'Editar Projeto',
                 'teams'     => 'Editar Time'
             ],
+            'breadcrumb' => [
+                'projects' => 'Projetos',
+                'teams'    => 'Times'
+            ],
+            'buttons' => [
+                'save' => "<u>S</u>alvar",
+                'save_close' => 'Salvar e fechar',
+                'or' => 'ou',
+                'cancel' => 'Cancelar'
+            ],
+            'messages' => [
+                'projects' => [
+                    'saving_project' => 'Salvando Projeto...'
+                ],
+                'teams' => [
+                    'saving_team' => 'Salvando Time...'
+                ]
+            ]
         ],
         'preview' => [
             'form_title' => [

@@ -20,16 +20,16 @@
                     data-request="onSave"
                     data-request-data="redirect:0"
                     data-hotkey="ctrl+s, cmd+s"
-                    data-load-indicator="Saving Team..."
+                    data-load-indicator="<?= e(trans('lincolnbrito.projects::lang.form.update.messages.teams.saving_team')) ?>."
                     class="btn btn-primary">
-                    <u>S</u>ave
+                    <?= trans('lincolnbrito.projects::lang.form.update.buttons.save') ?>
                 </button>
                 <button
                     type="button"
                     data-request="onSave"
                     data-request-data="close:1"
                     data-hotkey="ctrl+enter, cmd+enter"
-                    data-load-indicator="Saving Team..."
+                    data-load-indicator="<?= e(trans('lincolnbrito.projects::lang.form.update.messages.teams.saving_team')) ?>"
                     class="btn btn-default">
                     Save and Close
                 </button>

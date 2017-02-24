@@ -61,6 +61,10 @@ return [
                 'projects'  => 'Create Project',
                 'teams'     => 'Create Team'
             ],
+            'breadcrumb' => [
+                'projects' => 'Projects',
+                'teams'    => 'Teams'
+            ],
             'fields' => [
                 'projects' => [
                     'id'            => ['label'=>'ID'],
@@ -70,12 +74,30 @@ return [
                     'team_id'       => ['label'=>'Team','placeholder'=>'Please, select a team'],
                 ],
                 'teams' => []
+            ],
+            'buttons' => [
+                'create' => 'Create',
+                'create_close' => 'Creante and Close',
+                'or' => 'or',
+                'cancel' => 'Cancel'
+            ],
+            'messages' => [
+                'projects' => [
+                    'creating_project' => 'Creating Project...'
+                ],
+                'teams' => [
+                    'creating_team' => 'Creating Team...'
+                ]
             ]
         ],
         'update' => [
             'form_title' => [
                 'projects'  => 'Update Project',
                 'teams'     => 'Update Team'
+            ],
+            'breadcrumb' => [
+                'projects' => 'Projects',
+                'teams'    => 'Teams'
             ],
         ],
         'preview' => [
