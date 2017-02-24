@@ -37,8 +37,8 @@
                     type="button"
                     class="oc-icon-trash-o btn-icon danger pull-right"
                     data-request="onDelete"
-                    data-load-indicator="Deleting Project..."
-                    data-request-confirm="Delete this project?">
+                    data-load-indicator="<?= e(trans('lincolnbrito.projects::lang.form.update.messages.projects.deleting_project')) ?>"
+                    data-request-confirm="<?= e(trans('lincolnbrito.projects::lang.form.update.messages.projects.delete_question')) ?>">
                 </button>
                 <span class="btn-text">
                     <?= e(trans('lincolnbrito.projects::lang.form.update.buttons.or')) ?> <a href="<?= Backend::url('lincolnbrito/projects/projects') ?>"><?= e(trans('lincolnbrito.projects::lang.form.update.buttons.cancel')) ?></a>

@@ -1,12 +1,31 @@
 <?php namespace LincolnBrito\Projects\Models;
 
 use Model;
+use October\Rain\Database\Traits\Validation;
 
 /**
  * Project Model
  */
 class Project extends Model
 {
+    use Validation;
+
+    /**
+     * Validation rules
+     * @var array
+     */
+    public $rules = [
+        'name' => 'required',
+        'description' => 'required',
+        'ends_at' => 'required',
+    ];
+
+    public $attributeNames = [
+        'name'          => 'lincolnbrito.projects::lang.form.create.fields.projects.name.label',
+        'description'   => 'lincolnbrito.projects::lang.form.create.fields.projects.description.label',
+        'ends_at'       => 'lincolnbrito.projects::lang.form.create.fields.projects.ends_at.label'
+    ];
+
     /**
      * @var string The database table used by the model.
      */

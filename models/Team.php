@@ -11,8 +11,17 @@ class Team extends Model
 {
     use Validation;
 
+    /**
+     * Validation rules
+     * @var array
+     */
     public $rules = [
         'name' => 'required'
+    ];
+
+    public $attributeNames = [
+        'name' => 'lincolnbrito.projects::lang.form.create.fields.teams.name.label',
+        'users' => 'lincolnbrito.projects::lang.form.create.fields.teams.users.label'
     ];
 
     /**

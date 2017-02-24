@@ -73,7 +73,11 @@ return [
                     'ends_at'       => ['label'=>'Termina em'],
                     'team_id'       => ['label'=>'Time','placeholder'=>'Selecione um time'],
                 ],
-                'teams' => []
+                'teams' => [
+                    'id'            => ['label'=>'ID'],
+                    'name'          => ['label'=>'Nome'],
+                    'users'         => ['label'=>'Usuários'],
+                ]
             ],
             'buttons' => [
                 'create' => 'Criar',
@@ -107,10 +111,14 @@ return [
             ],
             'messages' => [
                 'projects' => [
-                    'saving_project' => 'Salvando Projeto...'
+                    'saving_project' => 'Salvando Projeto...',
+                    'deleting_project' => 'Apagando Projeto...',
+                    'delete_question' => 'Apagar esse projeto?',
                 ],
                 'teams' => [
-                    'saving_team' => 'Salvando Time...'
+                    'saving_team' => 'Salvando Time...',
+                    'deleting_team' => 'Apagando Time...',
+                    'delete_question' => 'Apagar esse time?',
                 ]
             ]
         ],

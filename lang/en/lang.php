@@ -73,7 +73,11 @@ return [
                     'ends_at'       => ['label'=>'Ends At'],
                     'team_id'       => ['label'=>'Team','placeholder'=>'Please, select a team'],
                 ],
-                'teams' => []
+                'teams' => [
+                    'id'            => ['label'=>'ID'],
+                    'name'          => ['label'=>'Name'],
+                    'users'         => ['label'=>'Users'],
+                ]
             ],
             'buttons' => [
                 'create' => 'Create',
@@ -107,10 +111,14 @@ return [
             ],
             'messages' => [
                 'projects' => [
-                    'saving_project' => 'Saving Project...'
+                    'saving_project' => 'Saving Project...',
+                    'deleting_project' => 'Deleting Project...',
+                    'delete_question' => 'Delete this project?',
                 ],
                 'teams' => [
-                    'saving_team' => 'Salving Team...'
+                    'saving_team' => 'Saving Team...',
+                    'deleting_team' => 'Deleting Team...',
+                    'delete_question' => 'Delete this team?',
                 ]
             ]
         ],
