@@ -22,4 +22,14 @@ class Projects extends Controller
 
         BackendMenu::setContext('LincolnBrito.Projects', 'projects', 'projects');
     }
+
+    public function listOverrideColumnValue( $record, $columnName )
+    {
+        if ( $columnName == 'description' && strlen($record->description) > 50 )
+        {
+            $description = substr($record->description, 0, 50);
+
+            return "<span title='{$record->description}'>{$description}...</span>";
+        }
+    }
 }
