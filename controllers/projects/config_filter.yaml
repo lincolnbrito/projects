@@ -1,0 +1,6 @@
+scopes:
+  team:
+    label: Team
+    modelClass: \LincolnBrito\Projects\Models\Team
+    nameFrom: name
+    conditions: team_id = :filtered

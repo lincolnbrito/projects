@@ -5,6 +5,9 @@
 # Model List Column configuration
 list: $/lincolnbrito/projects/models/project/columns.yaml
 
+# Model Filter configuration
+filter: config_filter.yaml
+
 # Model Class name
 modelClass: LincolnBrito\Projects\Models\Project
 
@@ -32,7 +35,7 @@ showSorting: true
 #     direction: desc
 
 # Display checkboxes next to each record
-# showCheckboxes: true
+showCheckboxes: true
 
 # Toolbar widget configuration
 toolbar:
