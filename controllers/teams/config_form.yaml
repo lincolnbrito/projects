@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Team
+
+# Model Form Field configuration
+form: $/lincolnbrito/projects/models/team/fields.yaml
+
+# Model Class name
+modelClass: LincolnBrito\Projects\Models\Team
+
+# Default redirect location
+defaultRedirect: lincolnbrito/projects/teams
+
+# Create page
+create:
+    title: Create Team
+    redirect: lincolnbrito/projects/teams/update/:id
+    redirectClose: lincolnbrito/projects/teams
+
+# Update page
+update:
+    title: Edit Team
+    redirect: lincolnbrito/projects/teams
+    redirectClose: lincolnbrito/projects/teams
+
+# Preview page
+preview:
+    title: Preview Team
