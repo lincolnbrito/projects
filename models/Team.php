@@ -19,6 +19,10 @@ class Team extends Model
         'name' => 'required'
     ];
 
+    /**
+     * Custom attributes names
+     * @var array
+     */
     public $attributeNames = [
         'name' => 'lincolnbrito.projects::lang.form.create.fields.teams.name.label',
         'users' => 'lincolnbrito.projects::lang.form.create.fields.teams.users.label'

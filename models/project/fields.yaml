@@ -18,6 +18,7 @@ fields:
         label: lincolnbrito.projects::lang.form.create.fields.projects.ends_at.label
         type: datepicker
         required: true
+        mode: date
     team_id:
         label: lincolnbrito.projects::lang.form.create.fields.projects.team_id.label
         type: dropdown

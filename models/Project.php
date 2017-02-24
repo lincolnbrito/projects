@@ -20,6 +20,10 @@ class Project extends Model
         'ends_at' => 'required',
     ];
 
+    /**
+     * Custom attributes names
+     * @var array
+     */
     public $attributeNames = [
         'name'          => 'lincolnbrito.projects::lang.form.create.fields.projects.name.label',
         'description'   => 'lincolnbrito.projects::lang.form.create.fields.projects.description.label',
