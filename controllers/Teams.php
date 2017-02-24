@@ -26,6 +26,10 @@ class Teams extends Controller
         BackendMenu::setContext('LincolnBrito.Projects', 'projects', 'teams');
     }
 
+    /**
+     * Create a Team
+     * @return mixed
+     */
     public function create_onSave()
     {
         $inputs = post('Team');
@@ -44,5 +48,25 @@ class Teams extends Controller
         Flash::success("Team saved sucessfully");
 
         return $this->makeRedirect('update',$teamModel);
+    }
+
+    public function update_onSave($teamId)
+    {
+        $inputs = post('Team');
+
+        //update team
+        $teamModel = Team::findOrFail($teamId);
+        $teamModel->name = $inputs['name'];
+        $teamModel->save();
+
+        //update users team_id
+        if(isset($inputs['users']) && count($inputs['users'])>0) {
+            User::where('team_id', $teamModel->id)
+                ->update(['team_id' => 0]);
+            User::whereIn('id', $inputs['users'])
+                ->update(['team_id' => $teamModel->id]);
+        }
+
+        Flash::success('Team updated successfully');
     }
 }
