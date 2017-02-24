@@ -1,5 +1,5 @@
 1.0.1:
-    - First version of Projects
-    - add_team_to_user.php
-    - create_teams_table.php
-    - create_projects_table.php
+  - First version of Projects
+  - create_teams_table.php
+  - add_team_to_users.php
+  - create_projects_table.php
