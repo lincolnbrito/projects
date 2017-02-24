@@ -83,15 +83,29 @@ class Plugin extends PluginBase
      */
     public function registerNavigation()
     {
-        return []; // Remove this line to activate
+        //return []; // Remove this line to activate
 
         return [
             'projects' => [
                 'label'       => 'Projects',
-                'url'         => Backend::url('lincolnbrito/projects/mycontroller'),
+                'url'         => Backend::url('lincolnbrito/projects/projects'),
                 'icon'        => 'icon-leaf',
                 'permissions' => ['lincolnbrito.projects.*'],
                 'order'       => 500,
+                'sideMenu' => [
+                    'posts' => [
+                        'label'       => 'Projects',
+                        'icon'        => 'icon-cube',
+                        'url'         => Backend::url('lincolnbrito/projects/projects'),
+                        'permissions' => ['lincolnbrito.projects.projects.*']
+                    ],
+                    'categories' => [
+                        'label'       => 'Teams',
+                        'icon'        => 'icon-users',
+                        'url'         => Backend::url('lincolnbrito/projects/teams'),
+                        'permissions' => ['lincolnbrito.projects.teams.*']
+                    ]
+                ]
             ],
         ];
     }
