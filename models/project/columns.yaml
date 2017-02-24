@@ -9,6 +9,9 @@ columns:
     name:
         label: Name
         searchable: true
+    description:
+        label: Description
+        searchable: true
     ends_at:
         label: Ends At
         type: date

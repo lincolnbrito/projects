@@ -1,0 +1,14 @@
+{
+  "name": "lincolnbrito/projects",
+  "description": "",
+  "keywords": ["october", "octobercms", "projects","team", "plugin"],
+  "authors": [
+    {
+      "name": "Lincoln Brito",
+      "email": "lincoln.sbrito@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  }
+}
