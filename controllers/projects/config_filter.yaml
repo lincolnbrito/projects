@@ -1,14 +1,14 @@
 scopes:
     team:
-      label: Team
+      label: lincolnbrito.projects::lang.list.filter.projects.team
       modelClass: \LincolnBrito\Projects\Models\Team
       nameFrom: name
       conditions: team_id = :filtered
     hide_past_due:
-        label: Hide past due
+        label: lincolnbrito.projects::lang.list.filter.projects.hide_past_due
         type: checkbox
         conditions: ends_at > now()
     published_at:
-        label: Date
+        label: lincolnbrito.projects::lang.list.filter.projects.published_at
         type: daterange
         conditions: created_at >= ':after' AND created_at <= ':before'

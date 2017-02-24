@@ -16,16 +16,16 @@ defaultRedirect: lincolnbrito/projects/projects
 
 # Create page
 create:
-    title: Create Project
+    title: lincolnbrito.projects::lang.form.create.form_title.projects
     redirect: lincolnbrito/projects/projects/update/:id
     redirectClose: lincolnbrito/projects/projects
 
 # Update page
 update:
-    title: Edit Project
+    title: lincolnbrito.projects::lang.form.update.form_title.projects
     redirect: lincolnbrito/projects/projects
     redirectClose: lincolnbrito/projects/projects
 
 # Preview page
 preview:
-    title: Preview Project
+    title: lincolnbrito.projects::lang.form.preview.form_title.projects

@@ -16,10 +16,10 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'Projects',
-            'description' => 'Manage your teams and projects',
-            'author'      => 'LincolnBrito',
-            'icon'        => 'icon-leaf'
+            'name'        => 'lincolnbrito.projects::lang.plugin.name',
+            'description' => 'lincolnbrito.projects::lang.plugin.description',
+            'author'      => 'Lincoln Brito',
+            'icon'        => 'icon-cube'
         ];
     }
 
@@ -68,12 +68,12 @@ class Plugin extends PluginBase
     {
         return [
             'lincolnbrito.projects.manage_teams' => [
-                'tab' => 'Projects',
-                'label' => 'Manage Teams'
+                'tab' => 'lincolnbrito.projects::lang.permissions.tab',
+                'label' => 'lincolnbrito.projects::lang.permissions.manage_teams'
             ],
             'lincolnbrito.projects.manage_projects' => [
-                'tab' => 'Projects',
-                'label' => 'Manage Projects'
+                'tab' => 'lincolnbrito.projects::lang.permissions.tab',
+                'label' => 'lincolnbrito.projects::lang.permissions.manage_projects'
             ],
         ];
     }
@@ -88,20 +88,20 @@ class Plugin extends PluginBase
 
         return [
             'projects' => [
-                'label'       => 'Projects',
+                'label'       => 'lincolnbrito.projects::lang.navigation.projects.label',
                 'url'         => Backend::url('lincolnbrito/projects/projects'),
-                'icon'        => 'icon-leaf',
+                'icon'        => 'icon-cube',
                 'permissions' => ['lincolnbrito.projects.*'],
                 'order'       => 500,
                 'sideMenu' => [
-                    'posts' => [
-                        'label'       => 'Projects',
+                    'projects' => [
+                        'label'       => 'lincolnbrito.projects::lang.navigation.projects.sideMenu.projects',
                         'icon'        => 'icon-cube',
                         'url'         => Backend::url('lincolnbrito/projects/projects'),
                         'permissions' => ['lincolnbrito.projects.manage_projects']
                     ],
-                    'categories' => [
-                        'label'       => 'Teams',
+                    'teams' => [
+                        'label'       => 'lincolnbrito.projects::lang.navigation.projects.sideMenu.teams',
                         'icon'        => 'icon-users',
                         'url'         => Backend::url('lincolnbrito/projects/teams'),
                         'permissions' => ['lincolnbrito.projects.manages_teams']

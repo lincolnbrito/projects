@@ -12,7 +12,7 @@ filter: config_filter.yaml
 modelClass: LincolnBrito\Projects\Models\Project
 
 # List Title
-title: Manage Projects
+title: lincolnbrito.projects::lang.list.list_title.projects
 
 # Link URL for each record
 recordUrl: lincolnbrito/projects/projects/update/:id

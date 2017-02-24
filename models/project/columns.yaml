@@ -4,19 +4,19 @@
 
 columns:
     id:
-        label: ID
+        label: lincolnbrito.projects::lang.list.columns.projects.id.label
         searchable: true
     name:
-        label: Name
+        label: lincolnbrito.projects::lang.list.columns.projects.name.label
         searchable: true
     description:
-        label: Description
+        label: lincolnbrito.projects::lang.list.columns.projects.description.label
         searchable: true
     ends_at:
-        label: Ends At
+        label: lincolnbrito.projects::lang.list.columns.projects.ends_at.label
         type: date
     team:
-        label: Team
+        label: lincolnbrito.projects::lang.list.columns.projects.team.label
         relation: team
         select: name
         searchable: false

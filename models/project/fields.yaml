@@ -4,20 +4,22 @@
 
 fields:
     id:
-        label: ID
+        label: lincolnbrito.projects::lang.form.create.fields.projects.id.label
         disabled: true
     name:
-        label: Name
+        label: lincolnbrito.projects::lang.form.create.fields.projects.name.label
         type: text
         required: true
     description:
-        label: Description
+        label: lincolnbrito.projects::lang.form.create.fields.projects.description.label
         type: textarea
         required: true
     ends_at:
-        label: Ends At
+        label: lincolnbrito.projects::lang.form.create.fields.projects.ends_at.label
         type: datepicker
         required: true
     team_id:
-        label: Team
+        label: lincolnbrito.projects::lang.form.create.fields.projects.team_id.label
         type: dropdown
+        placeholder: lincolnbrito.projects::lang.form.create.fields.projects.team_id.placeholder
+        showSearch: false

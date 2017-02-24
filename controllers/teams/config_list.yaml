@@ -9,7 +9,7 @@ list: $/lincolnbrito/projects/models/team/columns.yaml
 modelClass: LincolnBrito\Projects\Models\Team
 
 # List Title
-title: Manage Teams
+title: lincolnbrito.projects::lang.list.list_title.teams
 
 # Link URL for each record
 recordUrl: lincolnbrito/projects/teams/update/:id

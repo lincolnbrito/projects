@@ -4,13 +4,13 @@
 
 columns:
     id:
-        label: ID
+        label: lincolnbrito.projects::lang.list.columns.teams.id.label
         searchable: true
     name:
-        label: Name
+        label: lincolnbrito.projects::lang.list.columns.teams.name.label
         searchable: true
     users:
-        label: Users
+        label: lincolnbrito.projects::lang.list.columns.teams.users.label
         relation: users
         select: login
         searchable: false
