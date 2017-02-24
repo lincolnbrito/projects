@@ -4,12 +4,12 @@
 
 fields:
     id:
-        label: ID
+        label: lincolnbrito.projects::lang.form.create.fields.teams.id.label
         disabled: true
     name:
-        label: Name
+        label: lincolnbrito.projects::lang.form.create.fields.teams.name.label
         type: text
         required: true
     users:
-        label: Users
+        label: lincolnbrito.projects::lang.form.create.fields.teams.users.label
         type: checkboxlist

@@ -99,11 +99,29 @@ return [
                 'projects' => 'Projects',
                 'teams'    => 'Teams'
             ],
+            'buttons' => [
+                'save' => "<u>S</u>ave",
+                'save_close' => 'Save and close',
+                'or' => 'or',
+                'cancel' => 'Cancel'
+            ],
+            'messages' => [
+                'projects' => [
+                    'saving_project' => 'Saving Project...'
+                ],
+                'teams' => [
+                    'saving_team' => 'Salving Team...'
+                ]
+            ]
         ],
         'preview' => [
             'form_title' => [
                 'projects'  => 'Preview Project',
                 'teams'     => 'Preview Team'
+            ],
+            'breadcrumb' => [
+                'projects' => 'Projects',
+                'teams'    => 'Teams'
             ],
         ]
     ]

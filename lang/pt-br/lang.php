@@ -119,6 +119,10 @@ return [
                 'projects'  => 'Pré-visualizar Projeto',
                 'teams'     => 'Pré-visualizar Time'
             ],
+            'breadcrumb' => [
+                'projects' => 'Projetos',
+                'teams'    => 'Times'
+            ],
         ]
     ]
 ];
