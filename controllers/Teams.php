@@ -50,6 +50,10 @@ class Teams extends Controller
         return $this->makeRedirect('update',$teamModel);
     }
 
+    /**
+     * Update the team
+     * @param $teamId
+     */
     public function update_onSave($teamId)
     {
         $inputs = post('Team');
@@ -68,5 +72,25 @@ class Teams extends Controller
         }
 
         Flash::success('Team updated successfully');
+    }
+
+    /**
+     * Delete the team
+     * @param $teamId
+     * @return mixed
+     */
+    public function update_onDelete($teamId)
+    {
+        $teamModel = Team::findOrFail($teamId);
+        //reset the team_id
+        User::where('team_id', $teamModel->id)
+            ->update(['team_id' => 0]);
+
+        $teamModel->delete();
+
+        Flash::success('Team deleted successfully');
+
+        return $this->makeRedirect('delete', $teamModel);
+
     }
 }
