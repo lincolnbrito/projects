@@ -23,6 +23,11 @@ class Project extends Model
     protected $fillable = [];
 
     /**
+     * @var array Dates
+     */
+    protected $dates = ['ends_at'];
+
+    /**
      * @var array Relations
      */
     public $hasOne = [];
