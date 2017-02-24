@@ -36,7 +36,7 @@ class Team extends Model
     public $hasOne = [];
     public $hasMany = [
         'projects'  => '\LincolnBrito\Projects\Models\Projects',
-        'user'      => '\Backend\Models\User'
+        'users'      => '\Backend\Models\User'
     ];
     public $belongsTo = [];
     public $belongsToMany = [];

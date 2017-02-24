@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Project
+
+# Model Form Field configuration
+form: $/lincolnbrito/projects/models/project/fields.yaml
+
+# Model Class name
+modelClass: LincolnBrito\Projects\Models\Project
+
+# Default redirect location
+defaultRedirect: lincolnbrito/projects/projects
+
+# Create page
+create:
+    title: Create Project
+    redirect: lincolnbrito/projects/projects/update/:id
+    redirectClose: lincolnbrito/projects/projects
+
+# Update page
+update:
+    title: Edit Project
+    redirect: lincolnbrito/projects/projects
+    redirectClose: lincolnbrito/projects/projects
+
+# Preview page
+preview:
+    title: Preview Project

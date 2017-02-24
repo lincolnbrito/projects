@@ -36,4 +36,16 @@ class Project extends Model
     public $morphMany = [];
     public $attachOne = [];
     public $attachMany = [];
+
+    public function getTeamIdOptions()
+    {
+        $teams = Team::all(['id','name']);
+        $teamsOptions = [];
+
+        $teams->each( function($team) use (&$teamsOptions) {
+           $teamsOptions[$team->id]  = $team->name;
+        });
+
+        return $teamsOptions;
+    }
 }

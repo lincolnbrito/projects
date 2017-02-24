@@ -9,3 +9,8 @@ columns:
     name:
         label: Name
         searchable: true
+    users:
+        label: Users
+        relation: users
+        select: login
+        searchable: false

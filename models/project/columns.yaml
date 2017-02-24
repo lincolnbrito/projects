@@ -6,3 +6,13 @@ columns:
     id:
         label: ID
         searchable: true
+    name:
+        label: Name
+        searchable: true
+    ends_at:
+        label: Ends At
+    team:
+        label: Team
+        relation: team
+        select: name
+        searchable: false

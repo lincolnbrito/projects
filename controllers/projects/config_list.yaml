@@ -3,16 +3,16 @@
 # ===================================
 
 # Model List Column configuration
-list: $/lincolnbrito/projects/models/team/columns.yaml
+list: $/lincolnbrito/projects/models/project/columns.yaml
 
 # Model Class name
-modelClass: LincolnBrito\Projects\Models\Team
+modelClass: LincolnBrito\Projects\Models\Project
 
 # List Title
-title: Manage Teams
+title: Manage Projects
 
 # Link URL for each record
-recordUrl: lincolnbrito/projects/teams/update/:id
+recordUrl: lincolnbrito/projects/projects/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records
@@ -32,7 +32,7 @@ showSorting: true
 #     direction: desc
 
 # Display checkboxes next to each record
-showCheckboxes: true
+# showCheckboxes: true
 
 # Toolbar widget configuration
 toolbar:
