@@ -66,12 +66,14 @@ class Plugin extends PluginBase
      */
     public function registerPermissions()
     {
-        return []; // Remove this line to activate
-
         return [
-            'lincolnbrito.projects.some_permission' => [
+            'lincolnbrito.projects.manage_teams' => [
                 'tab' => 'Projects',
-                'label' => 'Some permission'
+                'label' => 'Manage Teams'
+            ],
+            'lincolnbrito.projects.manage_projects' => [
+                'tab' => 'Projects',
+                'label' => 'Manage Projects'
             ],
         ];
     }
@@ -83,7 +85,6 @@ class Plugin extends PluginBase
      */
     public function registerNavigation()
     {
-        //return []; // Remove this line to activate
 
         return [
             'projects' => [
@@ -97,13 +98,13 @@ class Plugin extends PluginBase
                         'label'       => 'Projects',
                         'icon'        => 'icon-cube',
                         'url'         => Backend::url('lincolnbrito/projects/projects'),
-                        'permissions' => ['lincolnbrito.projects.projects.*']
+                        'permissions' => ['lincolnbrito.projects.manage_projects']
                     ],
                     'categories' => [
                         'label'       => 'Teams',
                         'icon'        => 'icon-users',
                         'url'         => Backend::url('lincolnbrito/projects/teams'),
-                        'permissions' => ['lincolnbrito.projects.teams.*']
+                        'permissions' => ['lincolnbrito.projects.manages_teams']
                     ]
                 ]
             ],
