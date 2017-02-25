@@ -2,6 +2,7 @@
 
 use Backend\Models\User;
 use BackendMenu;
+use Lang;
 use Backend\Classes\Controller;
 use LincolnBrito\Projects\Models\Team;
 use October\Rain\Support\Facades\Flash;
@@ -47,10 +48,11 @@ class Teams extends Controller
                 ->update(['team_id' => $teamModel->id]);
         }
 
-        Flash::success("Team saved sucessfully");
+        Flash::success('Team created successfully');
 
         return $this->makeRedirect('update',$teamModel);
     }
+
 
     /**
      * Update the team
