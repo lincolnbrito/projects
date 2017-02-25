@@ -56,6 +56,10 @@ return [
         ]
     ],
     'form' => [
+        'name' => [
+            'project' => 'Projeto',
+            'team'    => 'Time'
+        ],
         'create' => [
             'form_title' => [
                 'projects'  => 'Criar Projeto',

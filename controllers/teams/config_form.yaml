@@ -3,7 +3,7 @@
 # ===================================
 
 # Record name
-name: Team
+name: lincolnbrito.projects::lang.form.name.team
 
 # Model Form Field configuration
 form: $/lincolnbrito/projects/models/team/fields.yaml
