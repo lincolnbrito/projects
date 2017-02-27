@@ -1,26 +1,32 @@
-# ===================================
-#  Form Field Definitions
-# ===================================
-
 fields:
     id:
-        label: lincolnbrito.projects::lang.form.create.fields.projects.id.label
+        label: 'lincolnbrito.projects::lang.form.create.fields.projects.id.label'
         disabled: true
+        type: text
     name:
-        label: lincolnbrito.projects::lang.form.create.fields.projects.name.label
+        label: 'lincolnbrito.projects::lang.form.create.fields.projects.name.label'
         type: text
         required: true
     description:
-        label: lincolnbrito.projects::lang.form.create.fields.projects.description.label
+        label: 'lincolnbrito.projects::lang.form.create.fields.projects.description.label'
+        size: ''
+        oc.commentPosition: ''
+        span: left
+        required: true
         type: textarea
-        required: true
     ends_at:
-        label: lincolnbrito.projects::lang.form.create.fields.projects.ends_at.label
-        type: datepicker
-        required: true
+        label: 'lincolnbrito.projects::lang.form.create.fields.projects.ends_at.label'
+        oc.commentPosition: ''
         mode: date
-    team_id:
-        label: lincolnbrito.projects::lang.form.create.fields.projects.team_id.label
-        type: dropdown
-        placeholder: lincolnbrito.projects::lang.form.create.fields.projects.team_id.placeholder
-        showSearch: false
+        span: right
+        required: true
+        type: datepicker
+tabs:
+    fields:
+        team_id:
+            label: 'lincolnbrito.projects::lang.form.create.fields.projects.team_id.label'
+            type: dropdown
+            placeholder: 'lincolnbrito.projects::lang.form.create.fields.projects.team_id.placeholder'
+            showSearch: true
+            span: auto
+            tab: 'lincolnbrito.projects::lang.navigation.projects.sideMenu.teams'
